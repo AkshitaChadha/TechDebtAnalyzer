@@ -1,8 +1,5 @@
 from pathlib import Path
 
-from pathlib import Path
-
-
 class Settings:
 
     BASE_DIR = Path(__file__).resolve().parents[2]

@@ -1,4 +1,4 @@
 from .repository import (
-    RepositoryCloneError,
-    RepositoryAnalysisError,
+    RepositoryCloneError as RepositoryCloneError,
+    RepositoryAnalysisError as RepositoryAnalysisError,
 )

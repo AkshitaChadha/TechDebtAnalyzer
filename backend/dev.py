@@ -1,6 +1,5 @@
 from app.services.git.clone import clone_repository
 from app.services.engine.analysis_engine import analyze_repository
-from app.services.git.churn import analyze_code_churn
 from pprint import pprint
 from app.dto.analysis_response import build_analysis_response
 

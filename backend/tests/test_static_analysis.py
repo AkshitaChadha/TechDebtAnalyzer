@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from app.services.analysis.static_analysis import run_static_analysis
 
 def test_ruff_detects_unused_import(tmp_path):
