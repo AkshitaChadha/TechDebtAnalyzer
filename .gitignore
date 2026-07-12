@@ -1,0 +1,49 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Environment Variables
+.env
+
+# Pytest
+.pytest_cache/
+
+# Ruff
+.ruff_cache/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Coverage
+.coverage
+htmlcov/
+
+# Local repositories cloned for analysis
+backend/repositories/
+
+# Python build files
+build/
+dist/
+*.egg-info/
+
+# Node (for frontend later)
+node_modules/
+
+# React build
+frontend/dist/
+frontend/build/
