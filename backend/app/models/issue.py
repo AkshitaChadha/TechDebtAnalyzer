@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from pathlib import Path
+from dataclasses import dataclass
 
 @dataclass
 class Issue:
@@ -9,3 +10,4 @@ class Issue:
     severity: str
     file_path: Path
     line: int
+    category:str= "maintainability"

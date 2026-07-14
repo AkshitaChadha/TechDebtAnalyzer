@@ -13,6 +13,7 @@ def run_complexity_stage(
     complexity_lookup = {}
 
     for metric in metrics:
+        #print( metric.file_path, metric.line, metric.complexity)
         key = (
             metric.file_path,
             metric.line,
@@ -21,6 +22,7 @@ def run_complexity_stage(
         complexity_lookup[key] = metric.complexity
 
     for entity in analysis.entities:
+        #print("ENTITY:", entity.file_path, entity.start_line,)
         key = (
             entity.file_path,
             entity.start_line,

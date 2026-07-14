@@ -7,39 +7,47 @@ def complexity_points(complexity: int) -> int:
     """
 
     if complexity <= 5:
-        return 2
+        level = "LOW"
 
-    if complexity <= 10:
-        return 5
+    elif complexity <= 10:
+        level = "MODERATE"
 
-    if complexity <= 20:
-        return 10
+    elif complexity <= 20:
+        level = "HIGH"
 
-    return 15
+    else:
+        level = "VERY_HIGH"
+
+    complexity_weights = {
+        "LOW": 2,
+        "MODERATE": 5,
+        "HIGH": 10,
+        "VERY_HIGH": 15,
+    }
+
+    return complexity_weights[level]
 
 
 def issue_points(issues: list[Issue]) -> int:
     """
-    Calculate points based on issue severity.
+    Calculate maintainability points.
     """
 
     points = 0
-
     for issue in issues:
+        if issue.category == "style":
+            continue
 
+        if issue.category == "correctness":
+            continue
         severity = issue.severity.lower()
-
         if severity == "error":
             points += 5
-
         elif severity == "warning":
             points += 3
-
         else:
             points += 1
-
     return points
-
 
 def churn_points(commit_count: int) -> int:
     """

@@ -5,6 +5,7 @@ from app.models.code_entity import CodeEntity
 from app.models.issue import Issue
 from app.models.priority_score import PriorityScore
 
+
 @dataclass
 class AnalysisResult:
     """
@@ -19,3 +20,4 @@ class AnalysisResult:
     entities: list[CodeEntity] = field(default_factory=list)
     issues: list[Issue] = field(default_factory=list)
     priority_scores: list[PriorityScore] = field(default_factory=list)
+    

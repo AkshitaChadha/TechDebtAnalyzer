@@ -31,3 +31,4 @@ def run_static_analysis(repository_path: Path):
     raw = json.loads(result.stdout)
 
     return normalize_ruff_issues(raw)
+
